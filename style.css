@@ -28,6 +28,7 @@ body {
 
 .frame:hover {
   scale: 90%;
+  opacity: 100%;
   overflow: hidden;
   transform:
     perspective(100em)

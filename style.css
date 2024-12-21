@@ -1,6 +1,5 @@
 body {
   background-image: url("img.jpg");
-  opacity: 0.5;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;

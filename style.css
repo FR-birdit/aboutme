@@ -1,5 +1,5 @@
 body {
-  background-image: url("img.jpg");
+  background-image: url("img.gif");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -12,7 +12,7 @@ body {
   opacity: 95%;
   border-radius: 15px;
   border: 2px solid #222222;
-  scale: 0%;
+  scale: 1%;
   transition: all 0.5s;
   margin-left: auto;
   margin-right: auto;
@@ -24,6 +24,7 @@ body {
     rotateX(4deg)
     rotateY(-24deg)
     rotateZ(4deg);
+  z-index: 2;
 }
 
 .frame:hover {
@@ -45,12 +46,14 @@ footer {
   top: 95%;
   transform: translate(-50%, -50%);
   overflow: hidden;
+  z-index: 2;
 }
 
 .pfp {
   scale: 70%;
   padding: 0px 180px;
   overflow: hidden;
+  z-index: 2;
 }
 
 .name {
@@ -62,6 +65,7 @@ footer {
   left: 50%;
   transform: translate(41%, -25%);
   transition: all 0.5s
+  z-index: 2;
 }
 
 .discord_name {
@@ -73,6 +77,7 @@ footer {
   left: 50%;
   transform: translate(42%, -120%);
   transition: all 0.5s
+  z-index: 2;
 }
 
 .discord {
@@ -86,6 +91,7 @@ footer {
   transform: translate(10%, -35%);
   overflow: hidden;
   transition: all 0.5s
+  z-index: 2;
 }
 
 .server {
@@ -99,6 +105,7 @@ footer {
   transform: translate(10%, -45%);
   overflow: hidden;
   transition: all 0.5s
+  z-index: 2;
 }
 
 .square_img {
@@ -109,6 +116,7 @@ footer {
   left: 0%;
   transform: translate(15%, 15%);
   overflow: hidden;
+  z-index: 2;
 }
 
 .dc_name {
@@ -120,6 +128,7 @@ footer {
   transform: translate(25%, -320%);
   overflow: hidden;
   transition: all 0.5s
+  z-index: 2;
 }
 
 .badge {
@@ -128,6 +137,7 @@ footer {
   transform: translate(-100%, -1950%);
   scale: 4%;
   overflow: hidden;
+  z-index: 2;
 }
 
 .dc_pronouns {
@@ -139,6 +149,7 @@ footer {
   transform: translate(25%, -470%);
   overflow: hidden;
   transition: all 0.5s
+  z-index: 2;
 }
 
 .dc_profile {
@@ -155,6 +166,7 @@ footer {
   top: 0%;
   left: 0%;
   transform: translate(350%, -310%);
+  z-index: 2;
 }
 
 .dc_profile:hover {
@@ -171,6 +183,7 @@ footer {
   scale: 8%;
   border-radius: 150px;
   overflow: hidden;
+  z-index: 2;
 }
 
 .server_name {
@@ -182,6 +195,7 @@ footer {
   color: white;
   overflow: hidden;
   transition: all 0.5s
+  z-index: 2;
 }
 
 .server_info {
@@ -193,6 +207,7 @@ footer {
   color: grey;
   overflow: hidden;
   transition: all 0.5s
+  z-index: 2;
 }
 
 .join_server {
@@ -209,6 +224,7 @@ footer {
   top: 0%;
   left: 0%;
   transform: translate(420%, -650%);
+  z-index: 2;
 }
 
 .join_server:hover {
@@ -280,4 +296,95 @@ footer:hover {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.snowflakes {
+	width: 100%; height: 1200px;
+	position: absolute; top: -90px; left: 0;
+	z-index: 1;
+}
+
+i, i:after, i:before { background: white; }
+i {
+	display: inline-block;
+	-webkit-animation: snowflakes 3s linear 2s 20;
+	-moz-animation: snowflakes 3s linear 2s 20;
+	position: relative;
+}
+i:after, i:before {
+	height: 100%;
+	width: 100%;
+	content: ".";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	-webkit-transform: rotate(120deg);
+}
+i:before { -webkit-transform: rotate(240deg); }
+
+@-webkit-keyframes snowflakes {
+	0% {
+		-webkit-transform: translate3d(0,0,0) rotate(0deg) scale(0.6);
+	}
+	100% {
+		-webkit-transform: translate3d(15px, 1200px, 0px) rotate(360deg) scale(0.6);
+	};
+}
+
+.snowflakes i:nth-child(3n) {
+	width: 16px; height: 4px;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: 30;
+	-webkit-transform-origin: right -45px;
+}
+
+.snowflakes i:nth-child(3n+1) {
+	width: 24px; height: 6px;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-iteration-count: 45;
+	-webkit-transform-origin: right -30px;
+}
+
+.snowflakes i:nth-child(3n+2) {
+	width: 32px; height: 8px;
+	-webkit-animation-duration: 8s;
+	-webkit-animation-iteration-count: 60;
+	-webkit-transform-origin: right -15px;
+}
+
+/* different delays so they don't all start at the same time */
+.snowflakes i:nth-child(7n) {
+  opacity:.3;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-timing-function:ease-in;
+}
+.snowflakes i:nth-child(7n+1) {
+  opacity:.4;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-timing-function:ease-out;
+}
+.snowflakes i:nth-child(7n+2) {
+  opacity:.5;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-timing-function:linear;
+}
+.snowflakes i:nth-child(7n+3) {
+  opacity:.6;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-timing-function:ease-in;
+}
+.snowflakes i:nth-child(7n+4) {
+  opacity:.7;
+  -webkit-animation-delay: 2.5s;
+  -webkit-animation-timing-function:linear;
+}
+.snowflakes i:nth-child(7n+5) {
+  opacity:.8;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-timing-function:ease-out;
+}
+.snowflakes i:nth-child(7n+6) {
+  opacity:.9;
+  -webkit-animation-delay: 3.5s;
+  -webkit-animation-timing-function:ease-in;
 }

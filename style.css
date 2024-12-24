@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  cursor: url("cursor.png"), auto;
 }
 
 .frame {
@@ -64,7 +65,7 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(41%, -25%);
-  transition: all 0.5s
+  transition: all 0.5s;
   z-index: 2;
 }
 
@@ -76,7 +77,7 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(42%, -120%);
-  transition: all 0.5s
+  transition: all 0.5s;
   z-index: 2;
 }
 
@@ -90,7 +91,7 @@ footer {
   left: 50%;
   transform: translate(10%, -35%);
   overflow: hidden;
-  transition: all 0.5s
+  transition: all 0.5s;
   z-index: 2;
 }
 
@@ -104,7 +105,7 @@ footer {
   left: 75%;
   transform: translate(10%, -45%);
   overflow: hidden;
-  transition: all 0.5s
+  transition: all 0.5s;
   z-index: 2;
 }
 
@@ -127,7 +128,7 @@ footer {
   left: 0%;
   transform: translate(25%, -320%);
   overflow: hidden;
-  transition: all 0.5s
+  transition: all 0.5s;
   z-index: 2;
 }
 
@@ -148,7 +149,7 @@ footer {
   left: 0%;
   transform: translate(25%, -470%);
   overflow: hidden;
-  transition: all 0.5s
+  transition: all 0.5s;
   z-index: 2;
 }
 
@@ -194,7 +195,7 @@ footer {
   font-family: "Cascadia Code";
   color: white;
   overflow: hidden;
-  transition: all 0.5s
+  transition: all 0.5s;
   z-index: 2;
 }
 
@@ -206,7 +207,7 @@ footer {
   font-family: "Cascadia Code";
   color: grey;
   overflow: hidden;
-  transition: all 0.5s
+  transition: all 0.5s;
   z-index: 2;
 }
 
